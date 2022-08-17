@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* INICIO CSS GENERAL */
+
+* {
+    Margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+// Variables
+
+$rojo1: #E5383B;
+$rojo2: #BA181B;
+$rojo3: #A4161A;
+$rojo4: #660708;
+$negro1: #0B090A;
+$negro2: #161A1D;
+$blanco1: #FFFFFF;
+$blanco2: #F5F3F4;
+$gris1: #D3D3D3;
+$gris2: #B1A7A6;
+
+$fuente1: 'Press Start 2P', cursive;
+$fuente2: 'Roboto Mono', monospace;
+
+$fondo1: linear-gradient(13deg, #a4161a 0%, #ba181b 50%, #000000 100%);
+$fondo2: url(media/backimg/black/black_mamba.png);
+$fondo3: url(media/backimg/light/sneaker_mesh_fabric.png);
+$fondo4: url(media/backimg/light/brickwall.png);
+
+
+// SCSS GENERAL
+
+body{
+    background-color: $rojo3;
+    color: $blanco2;
+    font-family: $fuente2;
+    background-image: $fondo1;
+}
+
+header{
+    background-color: $negro1;
+    background-image: $fondo2;
+
+    .logoTitulo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .logoHeader{
+        width: 220px;
+    }
+
+    h1{
+        color: $rojo2;
+        font-family: $fuente1;
+        font-size: 5rem;
+        -webkit-text-stroke: 3px $blanco1;
+        transition: all 0.5s;
+
+            &:hover{
+                color: $negro1;
+                font-family: $fuente1;
+                font-size: 5rem;
+                -webkit-text-stroke: 3px $rojo2;
+            }
+    }
+
+    .navbar{
+        padding: 0;
+    }
+    
+    .navbar2{
+        padding: 0;
+        background-image: $fondo3;
+    }
+
+    nav{
+        background-color: $blanco2;
+        padding: 0;
+
+        ul{
+            list-style: none;
+            border: solid $rojo1;
+            border-width: 10px 0px;
+            font-size: 0;
+            background-image: $fondo3;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            li{
+                font-size: 1.8rem;
+                font-weight: 300;
+                text-align: center;
+            }
+        }
+
+        .dropdown-item{
+            font-size: 1.2rem;
+        }
+
+        .navbar-brand img{
+            padding: 0 20px;
+        }
+        
+        .navbar-toggler{
+            height: 50px;
+        }
+        
+        .navbar-nav li a{
+            text-decoration: none;
+            color: $rojo1;
+            text-shadow: 0 0 1px $negro1;
+        }
+    }
+
+}
+
+main{
+    background-color: $rojo3;
+    padding-bottom: 100px;
+background-image: $fondo1;
+}
+
+
+.navbar-brand{
+    display: none;
+}
+
+.divNavbar{
+    display: flex;
+    width: 100%;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.navbar2{
+    width: 100%;
+}
+
+.navbar-nav li a{
+    transition: all 0.2s;
+
+        &:hover{
+            color: $rojo2;
+            font-weight: 700;
+            font-size: 2rem;
+            border: none;
+            border-radius: 8%;
+            background-color: $negro1;
+            background-image: $fondo2;
+        }
+}
+
+
+
+.dropdown-menu li a:hover{
+    color: $rojo2;
+    font-weight: 700;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 8%;
+    background-color: $negro1;
+    background-image: $fondo2;
+}
+
+.navbar-nav li a:focus{
+    color:$rojo2;
+    font-weight: bold;
+}
+
+main p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.8rem;
+    text-align: end;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 100px;
+    text-shadow: 0 0 10px $negro1;
+    font-family: $fuente1;
+}
+
+
+.sectionIndex{
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.textoHome{
+    width: 850px;
+    padding: 50px;
+
+    p{
+        font-size: 1.4rem;
+    }
+}
+
+
+.videoHome{
+    border-radius: 25% 10%;
+    border-radius: 30% 20% / 10% 30%;
+    height: auto;
+    width: 50%;
+    min-width: 520px;
+}
+
+.linkWhatsapp{
+    text-decoration: none;
+    color: $negro2;
+    font-weight: 600;
+    font-size: 1.8rem;
+    transition: all 0.5s;
+
+        &:hover{
+            font-weight: 700;
+            font-size: 1.9rem;
+            color: $rojo2;
+            border: none;
+            text-transform: uppercase;
+            background-color: $negro1;
+            background-image: $fondo2;
+        }
+}
+
+
+
+footer{
+    background-color: $blanco2;
+    color: $rojo2;
+    font-size: 20px;
+    font-weight: 500;
+    background-image: $fondo4;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .redes{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        img{
+            padding: 0 10px;
+            filter: grayscale(70%);
+            transition: all 0.5s;
+    
+                &:hover{
+                    transform: scale(1.10);
+                    filter: grayscale(0%);
+                }
+        }
+    
+        .logoInstagram{
+            width: 70px;
+            }
+            
+        .logoWhatsapp{
+            width: 70px;
+            }
+    }
+
+    .logoFooter{
+        height: 130px;
+        filter: grayscale(70%);
+        transition: all 0.5s;    
+    
+            &:hover{
+                filter: grayscale(0%);
+            }
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../media/logo/logopng3220.png">
+    <title>Buffalo Burgers | Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="logoTitulo">
+            <a href="../index.html"><img src="../media/logo/logosolo.png" alt="Logo"  class="logoHeader"></a>
+        
+            <h1>BUFFALO BURGERS</h1>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid navbar2 d-flex justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <img src="../media/logo/logosolo.png" alt="Logo Buffalo" width="100" class="d-inline-block align-text-top">
+                    BUFFALO BURGERS
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav container-fluid">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <strong>Contacto</strong>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#experiencia">Tu experiencia</a></li>
+                                <li><a class="dropdown-item" href="#trabajo">Trabajá con nosotros</a></li>                                
+                            </ul>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h2>Contacto</h2>
+
+    <section class="sectionExperiencia">
+        <h3 class="experiencia" id="experiencia">Dejanos tus datos y comentanos tu experiencia en Buffalo:</h3>
+        <form action="#" class="formExperiencia">
+            <div class="formulario1">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Tu nombre" class="casillero1">
+
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" placeholder="XX" class="casillero1">
+
+            <label for="mail">Mail:</label>
+            <input type="email" name="mail" placeholder="ejemplo@mail.com" class="casillero1">
+            </div>
+
+            <div class="formulario2">
+            <h4>¿Como llegaste a Buffalo?</h4>
+            
+            <label for="conociste">Recomendación</label>
+            <input type="radio" name="conociste">
+            <label for="conociste">Redes sociales</label>
+            <input type="radio" name="conociste">
+            <label for="conociste">Publicidad</label>
+            <input type="radio" name="conociste">
+            <label for="conociste">Otro</label>
+            <input type="radio" name="conociste">
+            <textarea name="" id="" cols="31" rows="1" placeholder="Si elegiste otro, indicanos como" class="casillero2"></textarea>
+            </div>
+
+            <div class="formulario3">
+            <label for="comentarios">Por último...</label>
+            <textarea name="comentarios" id="" cols="35" rows="7" placeholder="Dejanos un cometario: que es lo que más te gusto, que cambiarías para mejorar la experiencia..." class="casillero3"></textarea>
+            </div>
+
+            <div class="experienciaImg">
+                <img src="../media/buffaloconburger.jpeg" alt="Buffalo con hamburguesa">
+            </div>
+
+            <div class="experienciaBoton">
+            <input type="submit" value="¡Enviar!" class="boton">
+            
+            <h4>¡Gracias por elegirnos!</h4>
+            </div>
+
+        </form>
+    </section>
+
+    <div class="contenedorImgBuffalo">
+        <img src="../media/logo/logo2.jpg" alt="logo" class="imgBuffalo">
+    </div>
+
+    <section class="sectionTrabajo">
+        <h3 class="trabajoTitulo" id="trabajo">¿Querés ser parte del equipo de Buffalo?</h3>
+        <form action="#" class="formTrabajo">
+            <label for="cv">Dejanos tu CV:</label>
+            <input type="file" name="cv">
+
+            <input type="submit" value="¡Enviar!" class="boton">
+        </form>
+        <img src="../media/parrilla2.jpeg" alt="Hamburguesas en la parrilla cocinandose" class="imgTrabajo">
+    </section>
+
+    <footer>
+        <a href="../index.html"><img src="../media/logo/logosolo.png" alt="Logo" class="logoFooter"></a>
+        <p>© Buffalo Burgers</p>
+        <div class="redes">
+            <a href="https://www.instagram.com/buffaloburg" target="_blank"><img src="../media/iconos/instagram.png" alt="logo instagram" class="logoInstagram"></a>
+            <a href="https://wa.me/5491122500627" target="_blank"><img src="../media/iconos/whatsapp.png" alt="logo whatsapp" class="logoWhatsapp"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
