@@ -1,0 +1,800 @@
+@media only screen and (min-width: 992px) {
+
+
+
+    // INICIO CSS GENERAL
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .divNavbar {
+        display: flex;
+        width: 100%;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar2 {
+        width: 100%;
+    }
+
+    .navbar-nav li a {
+        transition: all 0.2s;
+
+        &:hover {
+        color: $rojo2;
+        font-weight: 700;
+        font-size: 2rem;
+        border: none;
+        border-radius: 8%;
+        background-color: #000000;
+        background-image: $fondo2;
+        }
+
+        &:focus {
+            color: $rojo2;
+            font-weight: bold;
+        }
+    }
+
+    .dropdown-menu li a:hover {
+        color: $rojo2;
+        font-weight: 700;
+        font-size: 1.4rem;
+        border: none;
+        border-radius: 8%;
+        background-color: #000000;
+        background-image: $fondo2;
+    }
+
+    main p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+        text-align: end;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-right: 100px;
+        text-shadow: 0 0 10px black;
+        font-family: $fuente1;
+    }
+
+    footer {
+        font-size: 20px;
+        font-weight: 500;
+        background-image: $fondo4;
+        padding: 0 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .redes {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                padding: 0 10px;
+                filter: grayscale(70%);
+                transition: all 0.5s;
+
+                &:hover {
+                    transform: scale(1.10);
+                    filter: grayscale(0%);
+                }
+            }
+
+            .logoInstagram {
+                width: 70px;
+            }
+
+            .logoWhatsapp {
+                width: 70px;
+            }
+        }
+
+        .logoFooter {
+            height: 130px;
+            filter: grayscale(70%);
+            transition: all 0.5s;
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+        }
+    }
+
+    // INICIO CSS HOME
+
+    .sectionIndex {
+        padding: 0px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .textoHome {
+        width: 850px;
+        padding: 50px;
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    .videoHome {
+        border-radius: 25% 10%;
+        border-radius: 30% 20% / 10% 30%;
+        height: auto;
+        width: 50%;
+        min-width: 520px;
+    }
+
+    .linkWhatsapp {
+        text-decoration: none;
+        color: $negro2;
+        font-weight: 600;
+        font-size: 1.8rem;
+        transition: all 0.5s;
+
+        &:hover {
+            font-weight: 700;
+            font-size: 1.9rem;
+            color: $rojo2;
+            border: none;
+            text-transform: uppercase;
+            background-color: $negro1;
+            background-image: $fondo2;
+        }
+    }
+
+    // INICIO CSS MENU
+
+    .sectionMenu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "articuloMenu2 articuloMenu1"
+            "articuloMenu3 articuloMenu4";
+    }
+
+    // APLICO MAPA
+
+    $mapaMenu: (
+        Menu1: $rojo3,
+        Menu2: $rojo4,
+        Menu3: $rojo5,
+        Menu4: $rojo6
+
+    );
+
+
+    @each $menu, $rojo in $mapaMenu {
+        .articulo#{$menu} {
+            grid-area: articulo#{$menu};
+            background-color: $rojo;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: $negro1;
+                background-image: $fondo2;
+            }
+        }
+        
+    }
+
+    // APLICO MIXIN
+
+    @mixin imgMenu ($border, $display, $width){
+        border-radius: $border;
+        display: $display;
+        width: $width;
+    }
+
+    
+    .articuloMenu1 .imgMenu,
+    .articuloMenu3 .imgMenu {
+        @include imgMenu(25% 10%, inline-block, 400px)
+        
+    }
+
+    .articuloMenu2 .imgMenu,
+    .articuloMenu4 .imgMenu {
+        @include imgMenu(10% 25%, inline-block, 400px)
+    }
+
+
+    .divMenu {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 4rem 0;
+        filter: grayscale(100%);
+        transition: all 0.5s;
+
+        &:hover {
+            filter: grayscale(0%);
+            color: $rojo3;
+            font-weight: 700;
+        }
+    }
+
+    // APLICO MIXIN
+
+    @mixin divMenu {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .divMenu4 {
+        @include divMenu;
+    }
+
+    .divMenu3 {
+        @include divMenu;
+    }
+
+
+    .divMenuTexto {
+        display: inline-block;
+        border: dashed;
+        border-width: 2px 4px;
+        border-radius: 40px;
+        padding: 1.5rem 2rem;
+    }
+
+    .tituloMenu {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .listaMenu {
+        padding-left: 1rem;
+        font-size: 1.2rem;
+    }
+
+    
+
+    .incluyenPapas {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-bottom: 0;
+        font-size: 2rem;
+        text-align: center;
+        transition: all 0.5s;
+
+        &:hover {
+            background-color: $negro1;
+            background-image: $fondo2;
+            color: $rojo2;
+        }
+    }
+
+
+    // INICIO CSS NOSOTROS
+
+    .sectionNosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "quienesSomos imgNosotros"
+            "dondeEstamos rangoEntrega";
+        justify-items: center;
+        align-items: center;
+        grid-row-gap: 100px;
+    }
+
+    .quienesSomos {
+        grid-area: quienesSomos;
+        text-align: center;
+        margin: 2rem 5rem;
+
+        p {
+            padding: 10px;
+            font-weight: 500;
+        }
+
+        h4 {
+            padding-top: 35px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    
+
+    .imgNosotros {
+        grid-area: imgNosotros;
+        padding-right: 50px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 100px / 120px;
+        }
+    }
+
+    .dondeEstamos {
+        grid-area: dondeEstamos;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $negro1;
+        background-image: $fondo2;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mapa {
+        width: 450px;
+        height: 400px;
+    }
+
+    .rangoEntrega {
+        width: 100%;
+        grid-area: rangoEntrega;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $negro1;
+        background-image: $fondo2;
+
+        img {
+            width: 500px;
+            border-radius: 25px;
+        }
+
+        p {
+            width: 600px;
+            padding: 25px 0;
+        }
+    } 
+
+    .h3Nosotros {
+        font-size: 1.8rem;
+        padding: 25px 0;
+        margin-bottom: 1rem;
+    }
+
+    // APLICO EXTEND
+
+    .h3Nosotros--variacion{
+        @extend .h3Nosotros;
+        color: $rojo2;
+    }
+
+    // INICIO CSS GALERIA
+
+    .sectionGaleria {
+        width: 100%;
+        height: auto;
+        padding: 10px 20px 20px 20px;
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "img1 img2 img3 img3"
+            "img4 img5 img3 img3"
+            "img6 img6 img7 img8"
+            "img6 img6 img9 img10"
+            "img11 img11 img12 img12"
+            "img11 img11 img12 img12";
+
+            div {
+                width: 100%;
+            }
+        
+            .img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        
+            .img1 {
+                grid-area: img1;
+            }
+        
+            .img2 {
+                grid-area: img2;
+            }
+        
+            .img3 {
+                grid-area: img3;
+            }
+        
+            .img4 {
+                grid-area: img4;
+            }
+        
+            .img5 {
+                grid-area: img5;
+            }
+        
+            .img6 {
+                grid-area: img6;
+            }
+        
+            .img7 {
+                grid-area: img7;
+            }
+        
+            .img8 {
+                grid-area: img8;
+            }
+        
+            .img9 {
+                grid-area: img9;
+            }
+        
+            .img10 {
+                grid-area: img10;
+            }
+        
+            .img11 {
+                grid-area: img11;
+            }
+        
+            .img12 {
+                grid-area: img12;
+            }
+    }
+
+    .imgGrande {
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    .imgChica {
+        transition: 0.5s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    // INICIO CSS CONTACTO
+
+    .formExperiencia {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-areas:
+            "formulario1 formulario2"
+            "formulario3 experienciaImg"
+            "experienciaBoton experienciaBoton";
+        align-items:center;
+        justify-items:center;
+    }
+
+    .experiencia {
+        grid-area: experiencia;
+        font-size: 35px;
+        text-align: center;
+        margin: 100px 1px;
+    }
+
+    .sectionExperiencia img {
+        border-radius: 10% / 50%;
+    }
+
+    .formulario1 {
+        grid-area: formulario1;
+        padding-left: 10%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario2 {
+        grid-area: formulario2;
+        font-size: 20px;
+        padding-left: 150px;
+        padding-bottom: 80px;
+        margin-right: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputForm2{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .formulario3 {
+        grid-area: formulario3;
+        font-size: 20px;
+        padding-left: 10%;
+        display: flex;
+        flex-direction: column;
+
+        label{
+            margin-bottom: 20px;
+        }
+    }
+
+    .casillero1 {
+        width: 450px;
+    }
+
+    .casillero2 {
+        margin-top: 50px;
+        width: 450px;
+        height: 100px;
+    }
+
+    .casillero3 {
+        width: 450px;
+        height: 200px;
+    }
+
+    .experienciaImg {
+        grid-area: experienciaImg;
+
+        img {
+            width: 80%;
+            padding: 0 30px;
+        }
+    }
+
+
+
+    .experienciaBoton {
+        grid-area: experienciaBoton;
+        justify-self: center;
+        align-self: center;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedorImgBuffalo {
+        background-image: url(../media/backimg/fondobuffalo.png);
+        background-repeat: repeat-x;
+        background-size: 50%;
+    }
+
+    .imgBuffalo {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    .sectionTrabajo {
+        margin: 3rem 10rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+            "trabajoTitulo trabajoTitulo"
+            "formTrabajo imgTrabajo";
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 700px;
+            padding-left: 50px;
+            border-radius: 10px 100px / 120px;
+        }
+    }
+
+    .trabajoTitulo {
+        grid-area: trabajoTitulo;
+        justify-self: center;
+        align-self: center;
+        font-size: 35px;
+    }
+
+    .formTrabajo {
+        grid-area: formTrabajo;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+
+        label{
+            padding-bottom: 30px;
+        }
+    }
+
+    .archivoTrabajo{
+        font-size: 15px;
+    }
+
+    .imgTrabajo {
+        grid-area: imgTrabajo;
+    }
+
+    .boton {
+        background-color: $rojo3;
+        background-image: linear-gradient(to right, $rojo2 0%, $negro1 51%, $rojo3 100%);
+        margin: 10px;
+        padding: 10px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: $blanco1;
+        border-radius: 10px;
+        display: block;
+
+        &:hover {
+            background-position: right center;
+            color: $blanco2;
+            text-decoration: none;
+        }
+    }
+}
+
+// INICIO SOLUCIÓN MENÚ
+
+@media only screen and (min-width: 992px) and (max-width: 1550px) {
+
+    .sectionMenu {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "articuloMenu2"
+            "articuloMenu1"
+            "articuloMenu3"
+            "articuloMenu4";
+    }
+}
+
+// INICIO SOLUCIÓN NOSOTROS
+
+@media only screen and (min-width: 992px) and (max-width: 1050px) {
+
+    .sectionNosotros{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.1fr 0.5fr 1fr;
+        grid-template-areas: 
+        "quienesSomos"
+        "imgNosotros"
+        "dondeEstamos"
+        "rangoEntrega"; 
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .imgNosotros{
+        grid-area: imgNosotros;
+        padding-bottom: 50px;
+        padding-left: 25px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 100px / 120px;
+        }
+    }
+        
+    .dondeEstamos{
+        width: 100%;
+        grid-area: dondeEstamos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 100px;
+        background-color: #000000;
+        background-image: url(media/backimg/black/black_mamba.png);
+    }
+    
+    
+    .mapa{
+        height: 250px;
+    }
+    
+    .rangoEntrega{
+        grid-area: rangoEntrega;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+        background-color: #ffffff00;
+        background-image: none;
+
+        img{
+            width: 80%;
+            max-width: 420px;
+            border-radius: 25px;
+            padding-bottom: 20px;
+        }
+
+        p{
+            width: 80%;
+        }
+    }
+    
+    .quienesSomos h4{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .h3Nosotros--variacion{
+        color: $blanco1;
+    }
+    
+}
+
+// INICIO SOLUCIÓN CONTACTO
+
+@media only screen and (min-width: 992px) and (max-width: 1106px) {
+
+    .formExperiencia {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 0.8fr 0.8fr 0.5fr;
+        grid-template-areas:
+            "formulario1"
+            "formulario2"
+            "formulario3"
+            "experienciaBoton";
+        padding-bottom: 100px;
+        align-items:center;
+        justify-items:center;
+
+        img {
+            display: none;
+        }
+    }
+
+    .formulario1, .formulario2, .formulario3 {
+        padding: 30px 0;
+    }
+
+    .formulario2{
+        margin-right: 0px;
+
+    }
+
+    .sectionTrabajo {
+        margin: 3rem 10rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr;
+        grid-template-areas:
+            "trabajoTitulo"
+            "formTrabajo"
+            "imgTrabajo";
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1107px) and (max-width: 1334px) {
+
+    .formExperiencia {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas:
+            "formulario1 formulario2"
+            "formulario3 experienciaBoton";
+        padding-bottom: 100px;
+
+        img {
+            display: none;
+        }
+    }
+
+}

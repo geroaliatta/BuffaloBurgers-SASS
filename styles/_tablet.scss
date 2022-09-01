@@ -1,0 +1,575 @@
+@media only screen and (min-width: 551px) and (max-width: 991px) {
+
+    // INICIO CSS GENERAL
+
+    header .logoTitulo {
+        display: none;
+    }
+
+    .navbar-brand {
+        color: $rojo2;
+        font-family: $fuente1;
+        font-size: 1.5rem;
+        -webkit-text-stroke: 2px $negro1;
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style: none;
+        border: solid $rojo1;
+        border-width: 10px 0px;
+        background-image: $fondo3;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        font-size: 1.4rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .navbar-nav li a {
+        text-decoration: none;
+        color: $rojo1;
+        text-shadow: 0 0 1px $negro1;
+    }
+
+    .dropdown-menu{
+        border: none;
+    }
+
+    main p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        text-align: center;
+        padding: 50px 10px;
+        text-shadow: 0 0 10px $negro1;
+        font-family: $fuente1;
+    }
+
+    footer {
+        font-size: 1rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .redes {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                padding: 0 10px;
+            }
+
+            .logoInstagram {
+                width: 60px;
+            }
+
+            .logoWhatsapp {
+                width: 60px;
+            }
+        }
+
+        .logoFooter {
+            height: 80px;
+        }
+    }
+
+
+    // INICIO CSS HOME
+
+    .sectionIndex {
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .textoHome {
+        padding-bottom: 40px;
+    }
+
+    .videoHome {
+        border-radius: 25% 10%;
+        border-radius: 30% 20% / 10% 30%;
+        height: auto;
+        width: 100%;
+    }
+
+    .linkWhatsapp {
+        text-decoration: none;
+        color: $negro2;
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+
+    // INICIO CSS MENU
+
+
+    .sectionMenu {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "articuloMenu2"
+            "articuloMenu1"
+            "articuloMenu3"
+            "articuloMenu4";
+    }
+
+    .articuloMenu1 {
+        grid-area: articuloMenu1;
+        color: $rojo2;
+        background-color: $negro1;
+        background-image: $fondo2;
+        border-radius: 0%;
+    }
+
+    .articuloMenu2 {
+        grid-area: articuloMenu2;
+
+    }
+
+    .articuloMenu3 {
+        grid-area: articuloMenu3;
+        background-color: $rojo4;
+    }
+
+    .articuloMenu4 {
+        grid-area: articuloMenu4;
+        color: $rojo2;
+        background-color: $negro1;
+        background-image: $fondo2;
+    }
+
+    .articuloMenu1 .imgMenu,
+    .articuloMenu3 .imgMenu {
+        border-radius: 25% 10%;
+    }
+
+    .articuloMenu2 .imgMenu,
+    .articuloMenu4 .imgMenu {
+        border-radius: 10% 25%;
+    }
+
+    .divMenu {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 15px 0;
+    }
+
+    .divMenu4 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .divMenu1 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .divMenuTexto {
+        display: inline-block;
+        border-radius: 40px;
+        padding: 10px 20px;
+    }
+
+    .tituloMenu {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        text-align: center;
+
+    }
+
+    .listaMenu {
+        padding-left: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .imgMenu {
+        display: inline-block;
+        width: 50%;
+        padding-top: 10px;
+    }
+
+    .incluyenPapas {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 2rem;
+        margin-bottom: 0;
+        color: $blanco1;
+        text-align: center;
+        background-color: $rojo4;
+    }
+
+
+    // INICIO CSS NOSOTROS
+
+
+    .sectionNosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.1fr 0.5fr 1fr;
+        grid-template-areas:
+            "quienesSomos"
+            "imgNosotros"
+            "dondeEstamos"
+            "rangoEntrega";
+        justify-items: center;
+        align-items: center;
+
+        h3 {
+            font-size: 1.8rem;
+        }
+    }
+
+    .quienesSomos {
+        grid-area: quienesSomos;
+        text-align: center;
+
+        h3{
+            padding-bottom: 35px;
+        }
+
+        p{
+            padding: 10px;
+            font-weight: 500;
+        }
+
+        h4{
+            text-align: center;
+            font-size: 1.5rem;
+            padding-top: 35px;
+            padding-bottom: 20px;
+        }
+    }
+
+
+    .imgNosotros {
+        grid-area: imgNosotros;
+        padding-bottom: 50px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 100px / 120px;
+        }
+    }
+
+
+    .dondeEstamos {
+        width: 100%;
+        grid-area: dondeEstamos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 100px;
+        background-color: $negro1;
+        background-image: $fondo2;
+
+        h3 {
+            padding-bottom: 20px;
+            padding-top: 10px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    }
+
+    .mapa {
+        height: 250px;
+    }
+
+    .rangoEntrega {
+        grid-area: rangoEntrega;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+
+        img{
+            width: 80%;
+            border-radius: 25px;
+            padding-bottom: 20px;
+        }
+
+        p{
+            width: 80%;
+        }
+
+        h3{
+            padding-bottom: 10px;
+            padding-top: 10px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    }
+
+    // INICIO CSS GALERIA
+
+    .sectionGaleria {
+        width: 100%;
+        height: auto;
+        padding: 10px 20px 20px 20px;
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4"
+            "img6 img6 "
+            "img6 img6 "
+            "img5 img7"
+            "img11 img12"
+            "img8 img8"
+            "img8 img8"
+            "img9 img10";
+
+            div {
+                width: 100%;
+            }
+        
+            .img {
+                width: 100%;
+                height: 100%;
+            }
+        
+            .img1 {
+                grid-area: img1;
+            }
+        
+            .img2 {
+                grid-area: img2;
+            }
+        
+            .img3 {
+                grid-area: img3;
+            }
+        
+            .img4 {
+                grid-area: img4;
+            }
+        
+            .img5 {
+                grid-area: img5;
+            }
+        
+            .img6 {
+                grid-area: img6;
+            }
+        
+            .img7 {
+                grid-area: img7;
+            }
+        
+            .img8 {
+                grid-area: img8;
+            }
+        
+            .img9 {
+                grid-area: img9;
+            }
+        
+            .img10 {
+                grid-area: img10;
+            }
+        
+            .img11 {
+                grid-area: img11;
+            }
+        
+            .img12 {
+                grid-area: img12;
+            }
+        
+            img {
+                border-radius: 10px;
+            }
+    }
+
+
+    // INICIO CSS CONTACTO
+    
+    .sectionExperiencia{
+        padding-top: 20px;
+
+        img{
+            border-radius: 10% / 50%;
+        }
+    }
+    
+    .formExperiencia{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.5fr 1fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "formulario1"
+        "formulario2"
+        "experienciaImg"
+        "formulario3"
+        "experienciaBoton";
+        justify-items:center;
+        align-items: center;
+    }
+    
+    .sectionExperiencia h3,
+    .sectionTrabajo h3{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .sectionExperiencia h4,
+    .sectionTrabajo h4{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .experiencia{
+        grid-area: experiencia;
+        text-align: center;
+        padding: 30px 1px;
+        background-color: $negro1;
+        background-image: $fondo2;
+    }
+    
+    
+    .formulario1{
+        grid-area: formulario1;
+        padding-bottom: 30px;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formulario2{
+        grid-area: formulario2;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
+
+    .inputForm2{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .formulario3{
+        grid-area: formulario3;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .casillero1{
+        width: 270px;
+    }
+    
+    .casillero2{
+        width: 300px;
+        height: 100px;
+    }
+    
+    .casillero3{
+        width: 300px;
+        height: 150px;
+        font-size: 1rem;
+    }
+    
+    .experienciaImg{
+        padding: 20px 0;
+        grid-area: experienciaImg;
+        background-color: $negro1;
+        background-image: $fondo2;
+
+        img{
+            width: 100%;
+            padding: 0 30px;
+        }
+    }    
+    
+    .experienciaBoton {
+        grid-area: experienciaBoton;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imgBuffalo{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .sectionTrabajo{
+        margin: 3rem 10rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+        "trabajoTitulo "
+        "formTrabajo";
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .trabajoTitulo{
+        grid-area: trabajoTitulo;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .formTrabajo{
+        grid-area: formTrabajo;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+    
+    .imgTrabajo{
+        grid-area: imgTrabajo;
+        display: none;
+    }
+    
+    .boton {
+        background-color: $rojo3;
+        font-size: 1.2rem;
+        background-image: linear-gradient(to right, $rojo2 0%, $negro1 51%, $rojo3 100%);
+        margin: 10px;
+        padding: 10px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: $blanco1;
+        border-radius: 10px;
+        display: block;
+
+        &:hover {
+            background-position: right center;
+            color: $blanco2;
+            text-decoration: none;
+        }
+    }
+
+}
