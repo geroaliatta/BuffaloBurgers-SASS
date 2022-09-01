@@ -1,0 +1,13 @@
+Modificaciones realizadas para mejorar el SEO:
+
+- A través de la etiqueta meta name description, agregué información correspondiente a cada página.
+
+- A través de la etiqueta meta name keywords, agregué las palabras clave correspondientes a cada página.
+
+- Reduje el peso a imágenes y borré archivos obsoletos de carpeta "media" para reducir su peso (pasó de 140mb a 26.5mb).
+
+- En lo que respecta a la etiqueta title ya tenía definido el nombre correspondiente a cada página acompañado del nombre de la empresa.
+
+- Las imágenes ya las tenía acompañadas de alt para sumar un texto descriptivo.
+- Creo que tanto los encabezados como la organización de la jerarquía de archivos ya lo tengo establecido acorde a lo requerido.
+
